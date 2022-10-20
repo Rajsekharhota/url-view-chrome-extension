@@ -6,6 +6,7 @@ btn.addEventListener("click", async () => {
   });
 
   chrome.tabs.query(
+    //important
     { active: true, windowId: chrome.windows.WINDOW_ID_CURRENT },
     function (tabs) {
       alert(tabs[0].url);
